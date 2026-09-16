@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Encrypted Chat</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f4f7;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 95%;
+      max-width: 420px;
+      background: white;
+      padding: 30px 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.12);
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .security {
+      margin: 15px 0 25px;
+      padding: 12px;
+      background: #eef7ee;
+      border-radius: 10px;
+      color: #287a35;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px;
+      margin: 8px 0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      margin-top: 12px;
+      border: none;
+      border-radius: 8px;
+      background: #2563eb;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    .admin {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>💬 Encrypted Chat</h1>
+
+    <div class="security">
+      🔒 Encrypted Messaging
+    </div>
+
+    <input
+      type="text"
+      id="username"
+      placeholder="Username"
+    >
+
+    <input
+      type="password"
+      id="password"
+      placeholder="Password"
+    >
+
+    <button onclick="login()">
+      Login
+    </button>
+
+    <button onclick="register()">
+      Create Account
+    </button>
+
+    <div class="admin">
+      Secure Chat Platform
+    </div>
+
+  </div>
+
+  <script>
+    function login() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      if (!username || !password) {
+        alert("Username এবং Password দিন");
+        return;
+      }
+
+      alert("Login system আমরা পরের ধাপে তৈরি করব।");
+    }
+
+    function register() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      if (!username || !password) {
+        alert("Username এবং Password দিন");
+        return;
+      }
+
+      alert("Registration system আমরা পরের ধাপে তৈরি করব।");
+    }
+  </script>
+
+</body>
+      </html>
